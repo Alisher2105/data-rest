@@ -1,2 +1,7 @@
-package com.example.datarest.repository;public interface AddressRepository {
+package com.example.datarest.repository;
+
+import com.example.datarest.entity.Address;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AddressRepository extends JpaRepository<Address, Integer> {
 }
